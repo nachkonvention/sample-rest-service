@@ -1,4 +1,8 @@
+@Library('sample-pipeline-libraries@master') _
+
 node {
+  isMaster()
+
   stage 'Checkout'
   checkout scm
 
